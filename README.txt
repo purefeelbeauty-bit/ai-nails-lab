@@ -49,3 +49,4 @@ ainailslab.com is already referenced throughout the code (canonical URL, Open
 Graph tags, structured data). Since you purchased it directly through Vercel,
 it should already be attached to whichever Vercel project you deploy this to —
 double check under Project Settings → Domains.
+ 
