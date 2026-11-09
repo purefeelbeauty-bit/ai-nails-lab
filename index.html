@@ -93,7 +93,11 @@ gtag('config', 'AW-18360526880');
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Russian Manicure"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Smart Pedicure"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nail Art"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel & Hard Gel Extensions"}}
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gel & Hard Gel Extensions"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brow Shaping & Tinting"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brow Lamination"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lash Lift & Tint"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Waxing"}}
     ]
   }
 }
@@ -291,6 +295,10 @@ gtag('config', 'AW-18360526880');
     color:var(--gold); font-weight:600; margin-bottom:4px;
   }
   .menu-card h3{ font-size:20px; margin-bottom:18px; }
+  .menu-card h3.menu-h3-next{ margin-top:28px; }
+  .menu-card-wide{ grid-column:span 2; }
+  .menu-cols{ display:grid; grid-template-columns:1fr 1fr; column-gap:36px; }
+  .menu-cols .menu-row:last-child{ border-bottom:none; }
   .menu-row{
     display:flex; justify-content:space-between; align-items:baseline; gap:14px;
     padding:11px 0; border-bottom:1px dashed rgba(198,154,109,.35);
@@ -491,6 +499,9 @@ gtag('config', 'AW-18360526880');
     .burger{ display:block; }
     .stats{ grid-template-columns:repeat(2,1fr); padding:30px 28px; gap:26px 22px; }
     .pricing-grid{ grid-template-columns:1fr; }
+    .menu-card-wide{ grid-column:auto; }
+    .menu-cols{ grid-template-columns:1fr; }
+    .menu-cols > div:first-child .menu-row:last-child{ border-bottom:1px dashed rgba(198,154,109,.35); }
     .method-grid{ grid-template-columns:1fr; gap:36px; }
     .photo-grid{ grid-template-columns:repeat(3, minmax(0, 1fr)); }
     .about-grid{ grid-template-columns:1fr; gap:44px; }
@@ -699,6 +710,119 @@ gtag('config', 'AW-18360526880');
         <div class="menu-row">
           <span class="menu-name">Simple design</span>
           <span class="menu-meta"><span class="menu-time">10 min</span><span class="menu-price">$10</span></span>
+        </div>
+      </div>
+
+      <div class="menu-card reveal">
+        <span class="menu-sub">Brows &amp; Lashes</span>
+        <h3>Brow Services</h3>
+        <div class="menu-row">
+          <span class="menu-name">Brow shaping</span>
+          <span class="menu-meta"><span class="menu-time">40 min</span><span class="menu-price">$40</span></span>
+        </div>
+        <div class="menu-row">
+          <span class="menu-name">Brow tinting</span>
+          <span class="menu-meta"><span class="menu-time">40 min</span><span class="menu-price">$40</span></span>
+        </div>
+        <div class="menu-row">
+          <span class="menu-name">Brow shaping + tinting</span>
+          <span class="menu-meta"><span class="menu-time">1 h 20 min</span><span class="menu-price">$70</span></span>
+        </div>
+        <div class="menu-row">
+          <span class="menu-name">Brow lamination</span>
+          <span class="menu-meta"><span class="menu-time">40 min</span><span class="menu-price">$80</span></span>
+        </div>
+        <div class="menu-row">
+          <span class="menu-name">Brow lamination + shaping</span>
+          <span class="menu-meta"><span class="menu-time">1 h</span><span class="menu-price">$100</span></span>
+        </div>
+        <div class="menu-row">
+          <span class="menu-name">Brow lamination + shaping + tinting</span>
+          <span class="menu-meta"><span class="menu-time">1 h 20 min</span><span class="menu-price">$120</span></span>
+        </div>
+        <h3 class="menu-h3-next">Lash Services</h3>
+        <div class="menu-row">
+          <span class="menu-name">Lash tinting</span>
+          <span class="menu-meta"><span class="menu-time">35 min</span><span class="menu-price">$40</span></span>
+        </div>
+        <div class="menu-row">
+          <span class="menu-name">Lash lift + tint</span>
+          <span class="menu-meta"><span class="menu-time">1 h 20 min</span><span class="menu-price">$130</span></span>
+        </div>
+      </div>
+
+      <div class="menu-card menu-card-wide reveal">
+        <span class="menu-sub">Waxing</span>
+        <h3>Face &amp; Body Waxing</h3>
+        <div class="menu-cols">
+          <div>
+          <div class="menu-row">
+            <span class="menu-name">Nose</span>
+            <span class="menu-meta"><span class="menu-time">20 min</span><span class="menu-price">$25</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Upper lip</span>
+            <span class="menu-meta"><span class="menu-time">20 min</span><span class="menu-price">$25</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Upper lip &amp; chin</span>
+            <span class="menu-meta"><span class="menu-time">25 min</span><span class="menu-price">$40</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Full face</span>
+            <span class="menu-meta"><span class="menu-time">30 min</span><span class="menu-price">$80</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Ears</span>
+            <span class="menu-meta"><span class="menu-time">20 min</span><span class="menu-price">$25</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Ears &amp; nose</span>
+            <span class="menu-meta"><span class="menu-time">35 min</span><span class="menu-price">$45</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Half leg</span>
+            <span class="menu-meta"><span class="menu-time">25 min</span><span class="menu-price">$55</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Full leg</span>
+            <span class="menu-meta"><span class="menu-time">40 min</span><span class="menu-price">$80</span></span>
+          </div>
+          </div>
+          <div>
+          <div class="menu-row">
+            <span class="menu-name">Half arm</span>
+            <span class="menu-meta"><span class="menu-time">20 min</span><span class="menu-price">$40</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Full arm</span>
+            <span class="menu-meta"><span class="menu-time">40 min</span><span class="menu-price">$60</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Underarm</span>
+            <span class="menu-meta"><span class="menu-time">25 min</span><span class="menu-price">$35</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Back</span>
+            <span class="menu-meta"><span class="menu-time">30 min</span><span class="menu-price">$70</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Brazilian bikini</span>
+            <span class="menu-meta"><span class="menu-time">40 min</span><span class="menu-price">$75</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Deep bikini</span>
+            <span class="menu-meta"><span class="menu-time">35 min</span><span class="menu-price">$55</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Bikini line</span>
+            <span class="menu-meta"><span class="menu-time">30 min</span><span class="menu-price">$55</span></span>
+          </div>
+          <div class="menu-row">
+            <span class="menu-name">Chest / stomach</span>
+            <span class="menu-meta"><span class="menu-time">35 min</span><span class="menu-price">$60</span></span>
+          </div>
+          </div>
         </div>
       </div>
     </div>
